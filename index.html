@@ -9,25 +9,24 @@
 </head>
 <body>
   <div id="app">
-    <ul>
-      <li v-for='val in user'>{{ val }}</li>
-    </ul>
-    <hr>
-    <ul>
-      <li v-for="(val, key) in user">
-        {{ key }} : {{ val }}
-      </li>
-    </ul>
+    <button v-on:click="onclick">
+      クリック！
+    </button>
+    <p>
+      {{ now }}
+    </p>
   </div>
   <script>
     var app = new Vue({
       // options
       el: '#app',
       data: {
-        user: {
-          firstName: 'Taro',
-          lastName: 'yamada',
-          age: '28'
+        now: ''
+      },
+      methods:{
+        onclick() {
+          // alert('クリックされました！')
+          this.now = new Date().toLocaleString();
         }
       }
     })
