@@ -9,13 +9,14 @@
 </head>
 <body>
   <div id="app">
-    <input type="text" v-bind:value="message">
+    <p v-show="toggle">Hello</p>
+  </div>
   <script>
     var app = new Vue({
       // options
       el: '#app',
       data: {
-        message: 'Hello Vue.js!'
+        toggle: false
       }
     })
   </script>
