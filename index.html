@@ -9,16 +9,26 @@
 </head>
 <body>
   <div id="app">
-    <ol>
-      <li v-for="color in colors">{{ color }}</li>
-    </ol>
+    <ul>
+      <li v-for='val in user'>{{ val }}</li>
+    </ul>
+    <hr>
+    <ul>
+      <li v-for="(val, key) in user">
+        {{ key }} : {{ val }}
+      </li>
+    </ul>
   </div>
   <script>
     var app = new Vue({
       // options
       el: '#app',
       data: {
-        colors: ["Red", "Green", "Blue"]
+        user: {
+          firstName: 'Taro',
+          lastName: 'yamada',
+          age: '28'
+        }
       }
     })
   </script>
