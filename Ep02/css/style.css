@@ -1,0 +1,13 @@
+body {
+  background: #f6f6f6;
+}
+
+body #app {
+  width: 980px;
+  background: #fff;
+  margin: 0 auto;
+  padding: .5rem 1rem;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+/*# sourceMappingURL=style.css.map */
