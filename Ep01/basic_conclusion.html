@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vue.js</title>
-  <script src="./vue.js"></script>
+  <!-- <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'> -->
+  <link rel='stylesheet' href='css/style.css'>
+  <script src="js/vue/vue.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 <body>
   <div id="app">
@@ -25,27 +28,5 @@
       <button v-on:click="onclick">クリック！</button>
     </p>
   </div>
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        message: 'Hello Vue.js!',
-        url: 'https://jp.vuejs.org/',
-        flag: true,
-        languages: ['JavaScript', 'Ruby', 'Python']
-      },
-      methods: {
-        onclick(){
-          if(this.flag){
-            this.message = 'Goodbye Vue.js',
-            this.flag = false
-          } else {
-            this.message = 'Hello Vue.js!',
-            this.flag = true
-          }
-        }
-      }
-    })
-  </script>
 </body>
 </html>
