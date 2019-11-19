@@ -10,4 +10,12 @@ body #app {
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
+
+body #app ul {
+  list-style: none;
+}
+
+body #app ul .done {
+  text-decoration: line-through;
+}
 /*# sourceMappingURL=style.css.map */

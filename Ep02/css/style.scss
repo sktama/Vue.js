@@ -5,6 +5,12 @@ body {
     background: #fff;
     margin: 0 auto;
     padding: .5rem 1rem;
+    ul {
+      list-style: none;
+      .done{
+        text-decoration: line-through;
+      }
+    }
     box-shadow: 0 2px 5px rgba(0,0,0,0.26)
   }
 }
