@@ -9,20 +9,18 @@
 </head>
 <body>
   <div id="app">
-    <p>
-      <input type="text" v-model="message">
-    </p>
-    <p>
-      <input type="text" v-model="message">
-    </p>
-    <pre>{{ $data }}</pre>
+    <hello-component></hello-component>
+    <hello-component></hello-component>
   </div>
   <script>
+    Vue.component('hello-component',{
+      template: '<p>Hello</p>'
+    })
     var app = new Vue({
       // options
       el: '#app',
       data: {
-        message: 'Hello Vue.js!'
+        message: 'Hello Vue.js!',
       }
     })
   </script>
