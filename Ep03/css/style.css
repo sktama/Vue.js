@@ -19,4 +19,8 @@ body #app ul {
 body #app ul li {
   margin: 1rem 0;
 }
+
+body [v-cloak] {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
