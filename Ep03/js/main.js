@@ -9,9 +9,8 @@ var app = new Vue({
         this.$data.bpi = res.data.bpi
         console.log(this.$data.bpi)
       })
-      // .then(function(res) {
-      //   this.bpi = res.data.bpi
-      //   console.log(this.bpi)
-      // }.bind(this))
+      .catch((err) => {
+        console.log(err)
+      })
   }
 })

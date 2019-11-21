@@ -1,5 +1,6 @@
 body {
   background: #f6f6f6;
+  font-family: serif;
   #app{
     width: 980px;
     background: #fff;
@@ -7,8 +8,8 @@ body {
     padding: .5rem 1rem;
     ul {
       list-style: none;
-      .done{
-        text-decoration: line-through;
+      li{
+        margin: 1rem 0;
       }
     }
     box-shadow: 0 2px 5px rgba(0,0,0,0.26)
