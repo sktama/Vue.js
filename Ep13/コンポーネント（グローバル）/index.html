@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue.js Todo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/vue/vue.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h2>Todo List</h2>
+    <form v-on:submit.prevent action="">
+      <input type="text" v-model="newTodo">
+      <button v-on:click="addTodo">追加</button>
+      <pre>{{ $data }}</pre>
+    </form>
+    <ul>
+      <li v-for="(todo, index) in todos">
+        <input type="checkbox" v-model="todo.isDone" v-bind:id="todo.todo + '_' + todo.id">
+        <label v-bind:for="todo.todo + '_' + todo.id" v-bind:class="{ done: todo.isDone }">{{ todo.todo }}</label>
+        <button v-on:click="deleteTodo(index)">削除</button>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
