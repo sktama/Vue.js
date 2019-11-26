@@ -1,0 +1,25 @@
+body {
+  background: #f6f6f6;
+  font-family: serif;
+  #app{
+    width: 980px;
+    background: #fff;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    ul {
+      list-style: none;
+      li{
+        margin-bottom: 5px;
+        padding: 10px;
+        border: solid 1px #d8d8d8;
+        &:hover{
+          background: #e0e0e0;
+        }
+      }
+      .done{
+        text-decoration: line-through;
+      }
+    }
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26)
+  }
+}

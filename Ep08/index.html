@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue.js Qiita API</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/vue/vue.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div id="app">
+    <p>
+      <input type="text" v-model="keyword">
+    </p>
+    <p>
+      {{ message }}
+    </p>
+    <ul>
+      <li v-for="item in items">
+        <a :href="item.url" target="_blank"> {{ item.title }} </a>　likes: {{ item.likes_count }}
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
