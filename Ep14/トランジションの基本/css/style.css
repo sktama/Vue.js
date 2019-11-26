@@ -18,4 +18,15 @@ body #app ul {
 body #app ul .done {
   text-decoration: line-through;
 }
+
+body #app .v-enter-active,
+body #app .v-enter-leave {
+  -webkit-transition: opacity 5s;
+  transition: opacity 5s;
+}
+
+body #app .v-enter,
+body #app .v-leave-to {
+  opacity: 0;
+}
 /*# sourceMappingURL=style.css.map */

@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Vue.js コンポーネント</title>
+  <title>Vue.js トランジション</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/vue/vue.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 <body>
   <div id="app">
-    
+    <button @click="show=!show">クリック！</button>
+    <transition>
+      <p v-show="show">
+        Hello Transition!!
+      </p>
+    </transition>
   </div>
 </body>
 </html>
