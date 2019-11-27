@@ -1,0 +1,35 @@
+body {
+  background: #f6f6f6;
+  #app{
+    width: 980px;
+    background: #fff;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    ul {
+      list-style: none;
+      .done{
+        text-decoration: line-through;
+      }
+    }
+    a {
+      display: inline-block;
+      width: 5%;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #e0e0e0;
+    }
+    .user{
+      margin: 15px 0;
+    }
+    .user,
+    .profile,
+    .posts{
+      border: solid 1px #e8e8e8;
+      padding: 15px;
+    }
+    .router-link-exact-active{
+      background: #e0e0e0;
+    }
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26)
+  }
+}
