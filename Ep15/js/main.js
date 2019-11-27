@@ -9,10 +9,12 @@ const router = new VueRouter({
     },
     {
       path: '/users',
+      name: 'user',
       component: User
     },
     {
       path: '/users/:userID',
+      name: 'user123',
       component: User123
     }
   ]
